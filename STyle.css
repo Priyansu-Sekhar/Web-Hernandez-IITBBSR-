@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brush+Script+MT&display=swap');
+* {
+    font-family: sans-serif, 'Courier New';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #f8f8ff;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #EEE;
+    cursor: pointer;
+
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    /* display: none; */
+    justify-content: center;
+    margin-right: -30px;
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    padding: 0 10px;
+    font-weight: 550;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color:  #A689E1;
+
+}
+
+.home::after {
+    content: "";
+    height: 2px;
+    background-color:  #A689E1;
+    position: absolute;
+    bottom: -4px;
+    left: 10px;
+}
+
+nav ul li a:hover::after {
+    content: "";
+    height: 2px;
+    background:  #A689E1;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.logo {
+    font-family: 'Crimson pro';
+    font-size: 24px;
+    font-weight: 800;
+    color: #A689E1;
+    margin-left: -40px;
+}
+
+/* .menu-icon {
+    font-size: 22px;
+    margin-right: -30px;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+} */
+
+.Hero {
+    background-image: url(image/elearning.png);
+    height: 90vh;
+    width: 100%;
+    background-color: #e3e6f3;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top 15% right 35px;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: #26282A;
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 20px;
+    margin: 10px auto;
+    margin-bottom: 10px;
+    max-width: 99%;
+    background-color: #f6dbf6;
+    border-radius: 10px;
+}
+
+.hero-section {
+    width: 65%;
+    margin-left: 25px;
+    font-weight: 600;
+
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+.Hero h4 {
+    color:  #26282A;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+H3 {
+    font-size: 45px;
+    font-weight: 600;
+}
+.Hero h4 span {
+    color: #A689E1;
+    font-family: 'Crimson pro';
+    font-size: 50px;
+    font-weight: 800;
+}
+
+/* #Product1 h2{
+    margin-top:-50px ;
+    margin-bottom: 14px;
+} */
+.Hero .hero-section button {
+    /* background-image: url(button.png); */
+    width: 200px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-top: 30px;
+    transform: scale(1.05);
+    margin-left: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+    display: inline-block;
+    border-radius: 5px;
+    font-family: 'Crimson pro';
+    background-color: #A689E1;
+    color: #fff;
+    border: 2px solid #A689E1;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+
+
+}
+.Hero .hero-section button:hover {
+    /* background-image: url(button.png); */
+    background-color: transparent;
+    color: #26282A;
+    border: 0;
+    width: 200px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 30px;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+    /* .section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 20px auto;
+        max-width: 80%;
+        box-sizing: border-box;
+        background-color: #f8f8ff;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 99%;
+        box-sizing: border-box;
+        background-color: #f8f8ff;
+        border-radius: 10px;
+        font-family: 'Crimson pro';
+        font-size: 20px;
+        font-weight: 800;
+        color: #26282A;
+        
+    }
+    h2 {
+      margin-top: 0;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;                    
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 10px 0;
+        font-family: 'Crimson pro';
+        font-size: 20px;
+        font-weight: 800;
+        background-color: #A689E1;
+        color: #fff;
+        border: 2px solid #A689E1;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+
+
+    }
+    button:hover {
+        background-color: #e3e6f3;
+        color: #26282A;
+        border: 0;
+        width: 200px;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 30px;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+        
+        
+    } */
+    .courses {
+        background-color: #f8f8ff;
+        margin: 20px auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    .courses .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 20px auto;
+        box-sizing: border-box;
+        background-color: #f8f8ff;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 100%;
+        box-sizing: border-box;
+
+        background-color: #f8f8ff;
+        border-radius: 10px;
+    }
+
+    .section-title {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 20px auto;
+        box-sizing: border-box;
+        font-size: 35px;
+        font-weight: 700;
+        font-family: 'Crimson pro';
+        color: #26282A;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .section-title span {
+        color: #A689E1;
+        font-family: 'Crimson pro';
+        font-size: 40px;
+        font-weight: 800;
+        margin-left: 5px;
+        
+    }
+
+    .course-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: -20px;
+        padding: 20px;
+        background-color: #f8f8ff;
+        border-radius: 10px;
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+        font-family: 'Crimson pro';
+        font-size: 20px;
+
+    }
+
+    .course-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 10px;
+        font-family: 'Crimson pro';
+        font-size: 20px;
+        font-weight: 800;
+        color: #26282A;
+        background-color: #f8f8ff;
+        box-sizing: border-box;
+        margin: 20px auto;
+        max-width: 99%;
+        box-sizing: border-box;
+        background-color: #f8f8ff;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .course-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .course-card h3 {
+        font-size: 1.5rem;
+        color: #26282A;
+        margin-bottom: 10px;
+    }
+
+    .course-card p {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    .register-btn {
+        background-color: #A689E1;
+        color: #fff;
+        border: 2px solid #A689E1;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 10px;
+
+        font-family: 'Crimson pro';
+        font-size: 20px;
+        font-weight: 800;
+        color: #26282A;
+        background-color: #A689E1;
+        color: #fff;
+    }
+
+    .register-btn:hover {
+        background-color: transparent;
+        color: #26282A;
+        border: 0;
+        width: 200px;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 30px;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+         @media screen and (max-width: 1024px) {
+        header {
+            padding: 15px 40px;
+        }
+    
+        .Hero {
+            background-size: cover;
+            padding: 40px;
+            text-align: center;
+            height: auto;
+        }
+    
+        .hero-section {
+            width: 90%;
+            margin: 0 auto;
+        }
+    
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        nav ul li {
+            padding: 8px;
+        }
+    
+        .container {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    
+    /* For mobile screens */
+    @media screen and (max-width: 768px) {
+        header {
+            padding: 10px 20px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        nav ul {
+            padding: 0;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        nav ul li {
+            display: block;
+            padding: 10px;
+        }
+    
+        .Hero {
+            height: auto;
+            padding: 30px;
+            text-align: center;
+            background-position: center;
+            background-size: contain;
+        }
+    
+        .hero-section {
+            width: 100%;
+            font-size: 25px;
+        }
+    
+        .Hero h4 {
+            font-size: 20px;
+        }
+    
+        .Hero h4 span {
+            font-size: 30px;
+        }
+    
+        .Hero .hero-section button {
+            width: 180px;
+            font-size: 18px;
+        }
+    }
+    
+    /* For very small mobile screens */
+    @media screen and (max-width: 480px) {
+        header {
+            padding: 10px;
+        }
+    
+        .logo {
+            font-size: 20px;
+        }
+    
+        nav ul li {
+            padding: 5px;
+        }
+    
+        .Hero {
+            padding: 20px;
+        }
+    
+        .Hero h4 {
+            font-size: 18px;
+        }
+    
+        .Hero h4 span {
+            font-size: 25px;
+        }
+    
+        .Hero .hero-section button {
+            width: 160px;
+            font-size: 16px;
+        }
+    }
+    
